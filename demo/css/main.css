@@ -1174,7 +1174,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0; }
     #search_input_box .form-control:focus {
       box-shadow: none;
-      outline: none; }
+      outline: none;
+     }
   #search_input_box input.placeholder {
     color: #ffffff;
     font-size: 14px; }
@@ -5790,4 +5791,9 @@ label {
   .footer-text i {
     color: #ffba00; }
 
+
+  /*RegistrationForm Css*/
+#registrationForm .form-control:focus {
+  border-bottom-color: #ffba00;
+}
 /*# sourceMappingURL=main.css.map */

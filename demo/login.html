@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Karma Shop</title>
+	<title>Shop bán giày dép</title>
 
 	<!--
 		CSS
@@ -54,29 +54,32 @@
 								 aria-expanded="false">Nam</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="category.html">Hunter</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-product.html">Sandal</a></li>
-									<li class="nav-item"><a class="nav-link" href="checkout.html">Giày thể thao</a></li>
-									<li class="nav-item"><a class="nav-link" href="cart.html">Giày chạy bộ</a></li>
-									<li class="nav-item"><a class="nav-link" href="confirmation.html">Giày đá banh</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Sandal</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Giày thể thao</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Giày chạy bộ</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Giày đá banh</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown active">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								   aria-expanded="false">Nữ</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item active"><a class="nav-link" href="category.html">Hunter</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Sandal</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Giày thể thao nữ</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Giày chạy bộ - đi bộ</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">Giày búp bê</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								<a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Khuyến mãi</a>
 <!--								<ul class="dropdown-menu">-->
 <!--									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>-->
 <!--									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>-->
 <!--								</ul>-->
 							</li>
-<!--							<li class="nav-item submenu dropdown active">-->
-<!--								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"-->
-<!--								 aria-expanded="false">Pages</a>-->
-<!--								<ul class="dropdown-menu">-->
-<!--									<li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>-->
-<!--									<li class="nav-item"><a class="nav-link" href="tracking.html">Tracking</a></li>-->
-<!--									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>-->
-<!--								</ul>-->
-<!--							</li>-->
+
 							<li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
@@ -93,7 +96,7 @@
 		<div class="search_input" id="search_input_box">
 			<div class="container">
 				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search_input" placeholder="Search Here">
+					<input type="text" class="form-control" id="search_input" placeholder="Tìm kiếm">
 					<button type="submit" class="btn"></button>
 					<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
 				</form>
@@ -107,10 +110,10 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Login/Register</h1>
+					<h1>Đăng nhập</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Login/Register</a>
+						<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Đăng nhập</a>
 					</nav>
 				</div>
 			</div>
@@ -126,31 +129,31 @@
 					<div class="login_box_img">
 						<img class="img-fluid" src="img/login.jpg" alt="">
 						<div class="hover">
-							<h4>New to our website?</h4>
-							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="primary-btn" href="registration.html">Create an Account</a>
+							<h4>Bạn là người mới?</h4>
+							<p>Hãy tạo tài khoản để mua hàng ở trang web chúng tôi!</p>
+							<a class="primary-btn" href="registration.html">Tạo tài khoản</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="login_form_inner">
-						<h3>Log in to enter</h3>
+						<h3>ĐĂNG NHẬP</h3>
 						<form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tên đăng nhập'">
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+								<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mật khẩu'">
 							</div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
 									<input type="checkbox" id="f-option2" name="selector">
-									<label for="f-option2">Keep me logged in</label>
+									<label for="f-option2">Duy trì đăng nhập</label>
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="primary-btn">Log In</button>
-								<a href="#">Forgot Password?</a>
+								<button type="submit" value="submit" class="primary-btn">Đăng nhập</button>
+								<a href="#">Quên mật khẩu?</a>
 							</div>
 						</form>
 					</div>
@@ -173,35 +176,35 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-4  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
-						<div class="" id="mc_embed_signup">
+<!--				<div class="col-lg-4  col-md-6 col-sm-6">-->
+<!--					<div class="single-footer-widget">-->
+<!--						<h6>Newsletter</h6>-->
+<!--						<p>Stay update with our latest</p>-->
+<!--						<div class="" id="mc_embed_signup">-->
 
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="form-inline">
+<!--							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"-->
+<!--							 method="get" class="form-inline">-->
 
-								<div class="d-flex flex-row">
+<!--								<div class="d-flex flex-row">-->
 
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
+<!--									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"-->
+<!--									 required="" type="email">-->
 
 
-									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-									</div>
+<!--									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>-->
+<!--									<div style="position: absolute; left: -5000px;">-->
+<!--										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">-->
+<!--									</div>-->
 
-									<!-- <div class="col-lg-4 col-md-4">
-													<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-												</div>  -->
-								</div>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
+<!--									&lt;!&ndash; <div class="col-lg-4 col-md-4">-->
+<!--													<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>-->
+<!--												</div>  &ndash;&gt;-->
+<!--								</div>-->
+<!--								<div class="info"></div>-->
+<!--							</form>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instragram Feed</h6>
