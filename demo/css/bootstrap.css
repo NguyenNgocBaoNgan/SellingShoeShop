@@ -52,7 +52,7 @@ html {
 }
 
 @-ms-viewport {
-    width: device-width
+    width: device-width;
 }
 
 article,
@@ -512,7 +512,8 @@ mark {
 
 .img-fluid {
     max-width: 100%;
-    height: auto
+    height: auto;
+    filter:brightness(100%);
 }
 
 .img-thumbnail {
