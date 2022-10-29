@@ -16,18 +16,18 @@
   position: fixed;
   bottom: 80px;
   right: 50px;
-  z-index: 99;
+  z-index:5;
   border: none;
   outline: none;
-  background-color:white ;
+  background-color: #ffa500;
 
   color: white;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 40px;
   opacity: 0.9;
 }
 #myBtn:hover {
-  background-color: white;
+  background-color: #ffa500;
 }
 /*end btt */
 
