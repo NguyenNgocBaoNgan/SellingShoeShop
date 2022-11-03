@@ -5873,11 +5873,11 @@ label {
 
   padding-top: 20px;
 }
-li {
+.shopping-cart-items li {
   margin-bottom: 18px;
 }
 
-img {
+.shopping-cart-items img {
   float: left;
   margin-right: 12px;
 }
