@@ -178,12 +178,14 @@
 				<div class="col-lg-6">
 					<div class="login_form_inner">
 						<h3>ĐĂNG NHẬP</h3>
-						<form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+						<form class="row login_form" action="#" method="post" id="contactForm" >
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tên đăng nhập'">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email đăng nhập'">
+								<span class="form-message"></span>
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mật khẩu'">
+								<span class="form-message"></span>
 							</div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
@@ -298,6 +300,47 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+
+		document.addEventListener('DOMContentLoaded', function () {
+
+
+			// Mong muốn của chúng ta
+			Validator({
+				form: '#contactForm',
+				formGroupSelector: '.form-group',
+				errorSelector: '.form-message',
+				rules: [
+					Validator.isRequired('#name', 'Vui lòng nhập email đăng nhập'),
+					Validator.isEmail('#name'),
+					Validator.minLength('#password', 6),
+					Validator.isRequired('#password_confirmation'),
+
+				],
+				onSubmit: function (data) {
+					// Call API
+					console.log(data);
+				}
+			});
+
+
+			// Validator({
+			//   form: '#form-2',
+			//   formGroupSelector: '.form-group',
+			//   errorSelector: '.form-message',
+			//   rules: [
+			//     Validator.isEmail('#email'),
+			//     Validator.minLength('#password', 6),
+			//   ],
+			//   onSubmit: function (data) {
+			//     // Call API
+			//     console.log(data);
+			//   }
+			// });
+		});
+
+	</script>
 </body>
 
 </html>
