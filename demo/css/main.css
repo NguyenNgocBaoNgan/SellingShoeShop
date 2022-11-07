@@ -6720,6 +6720,7 @@ label {
     text-align: center;
     width: 100%;
     transform: translateY(220%);
+    margin-top: -400px;
 }
 
 .login_box_area .login_box_img .hover h4 {
@@ -8302,7 +8303,7 @@ label {
     position: relative;
     border-radius: 3px;
     padding: 20px;
-    margin-right: 146px;
+    margin-right: 221px;
 }
 
 .shopping-cart-header {
@@ -8324,9 +8325,11 @@ li {
     margin-bottom: 18px;
 }
 
-img {
+.clearfix img {
     float: left;
     margin-right: 12px;
+    width: 70px;
+    height: 70px;
 }
 
 .item-name {
