@@ -255,14 +255,14 @@ $(document).ready(function(){
         noUiSlider.create(nonLinearSlider, {
             connect: true,
             behaviour: 'tap',
-            start: [ 500, 4000 ],
+            start: [ 0, 2500000 ],
             range: {
-                // Starting at 500, step the value by 500,
+                // Starting at 100.000, step the value by 500,
                 // until 4000 is reached. From there, step by 1000.
                 'min': [ 0 ],
-                '10%': [ 500, 500 ],
-                '50%': [ 4000, 1000 ],
-                'max': [ 10000 ]
+                '10%': [ 5000, 10000 ],
+                '50%': [ 100000 , 200000 ],
+                'max': [ 2500000 ]
             }
         });
 
@@ -599,6 +599,15 @@ $(document).ready(function(){
         $("#cart").on("click", function() {
             $(".shopping-cart").fadeToggle( "fast");
         });
+
+    $(".col-lg-12").on("click", function() {
+        $(".shopping-cart").fadeToggle( "fast");
+    });
+
+
+
+
+
 
 
 });

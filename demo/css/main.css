@@ -2493,6 +2493,10 @@ h1, h2, h3, h4, h5, h6 {
 .single-related-product .desc {
     margin: 10px 0px 10px 15px;
 }
+.single-related-product img{
+    width: 70px;
+    height: 70px;
+}
 
 .single-related-product .price h6 {
     font-size: 14px;
