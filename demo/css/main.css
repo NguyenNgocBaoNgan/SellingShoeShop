@@ -5173,6 +5173,10 @@ label {
     vertical-align: middle;
     align-self: center;
 }
+.media .d-flex img{
+    width: 102px;
+    height: 102px;
+}
 
 .most_p_list .media .media-body h4 {
     margin-bottom: 8px;
@@ -8329,7 +8333,7 @@ li {
     margin-bottom: 18px;
 }
 
-.clearfix img {
+.shopping-cart-items .clearfix img {
     float: left;
     margin-right: 12px;
     width: 70px;
