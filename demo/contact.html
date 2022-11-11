@@ -28,88 +28,6 @@
 	<link rel="stylesheet" href="css/nouislider.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-
-	var ktTen =false;
-
-	var ktEmail = false;
-
-	var ktMatKhau = false;
-
-	var email ="";
-
-	$('#name').blur(function(){
-
-	var name = $('#name').val();
-
-	if(name.length < 6){
-
-	document.getElementById("name").value = "";
-
-	$("#name").attr("placeholder", "Họ và tên phải >= 6 ký tự");
-
-	$("#iname").attr("class", "zmdi zmdi-account material-icons-name");
-
-	ktTen = false;
-
-	}else{
-
-	$("#iname").attr("class", "zmdi zmdi-badge-check");
-
-	ktTen = true;
-
-	}
-
-	});
-
-	$('#email').blur(function(){
-
-	email = $('#email').val();
-
-	if(!email.includes("@")){
-
-	document.getElementById("email").value = "";
-
-	$("#email").attr("placeholder", "định dạng email không hợp lệ ");
-
-	ktEmail = false;
-
-	$("#iemail").attr("class", "zmdi zmdi-email");
-
-	}else{
-
-	$("#iemail").attr("class", "zmdi zmdi-badge-check");
-
-	ktEmail = true;
-
-	}
-	});
-
-	$( "#dangky").click(function() {
-
-	if(ktTen==false||ktEmail==false){
-
-	alert("Đăng ký thất bại vì một số trường chưa hoàn thành việc điền dữ liệu");
-
-	}else{
-
-	//alert(email);
-
-	//$('#ketqua').text(email);
-
-	$('#ketqua').html("Đăng ký thành công vui lòng check email:  <b>"+email+"</b> để xác nhận thông tin");
-
-	}
-
-	});
-
-	});
-</script>
-	<script src="lib/jquery.js"></script>
-	<script src="lib/jquery.validate.js"></script>
 </head>
 
 <body>
@@ -148,7 +66,7 @@
 							<ul class="dropdown-menu">
 								<li class="nav-item "><a class="nav-link" href="category/Nu/Boots/Boots1.html">Boots</a></li>
 								<li class="nav-item"><a class="nav-link" href="category/Nu/Sandal/Sandal-01.html">Sandal</a></li>
-								<li class="nav-item"><a class="nav-link" href="category/Nu/SportShoes/SportShoe-01.html">Giày thể thao nữ</a></li>
+								<li class="nav-item"><a class="nav-link" href="category/Nu/SportShoes/SportShoe-01.html">Giày thể thao</a></li>
 								<li class="nav-item"><a class="nav-link" href="category/Nu/RunningShoes/RunningShoes-01.html">Giày chạy bộ - đi bộ</a></li>
 							</ul>
 						</li>
@@ -192,27 +110,27 @@
 
 		<ul class="shopping-cart-items">
 			<li class="clearfix">
-				<img src="../../../img/product/Nam/Boots/b1.1.png" alt="item1" />
+				<img src="img/product/Nam/Boots/b1.1.png" alt="item1" />
 				<span class="item-name">Giày Boot Nam Đế Cao Màu Vàng PALA GN400</span>
 				<span class="item-price">550.000đ</span>
 				<span class="item-quantity">Số lượng: 01</span>
 			</li>
 
 			<li class="clearfix">
-				<img src="../../../img/product/Nam/Boots/b2.1.png" alt="item2" />
+				<img src="img/product/Nam/Boots/b2.1.png" alt="item2" />
 				<span class="item-name">Giày boot nam màu trơn Không có dây kéo</span>
 				<span class="item-price">806.000đ</span>
 				<span class="item-quantity">Số lượng: 01</span>
 			</li>
 
 			<li class="clearfix">
-				<img src="../../../img/product/Nam/Boots/b3.1.png" alt="item3" />
+				<img src="img/product/Nam/Boots/b3.1.png" alt="item3" />
 				<span class="item-name">Nam Giày ống Chelsea Suedette Mặc vào</span>
 				<span class="item-price">623.000đ</span>
 				<span class="item-quantity">Số lượng: 01</span>
 			</li>
 		</ul>
-		<a href="../../../cart.html" class="button">Thanh toán</a>
+		<a href="cart.html" class="button">Thanh toán</a>
 	</div> <!--end shopping-cart -->
 
 
@@ -242,7 +160,7 @@
 				<h1>Liên hệ chúng tôi</h1>
 				<nav class="d-flex align-items-center">
 					<a href="index.html">Trang chủ<span class="lnr lnr-arrow-right"></span></a>
-					<a href="category.html">Liên hệ</a>
+					<a href="contact.html">Liên hệ</a>
 				</nav>
 			</div>
 		</div>
@@ -268,11 +186,12 @@
 					<div class="info_item">
 						<i class="lnr lnr-home"></i>
 						<h6>Thủ Đức, Việt Nam</h6>
-						<p>Khu phố 6, Tp.Hồ Chí Minh</p>
+						<p>Khu phố 6, phường Linh Trung,
+							thành phố Hồ Chí Minh</p>
 					</div>
 					<div class="info_item">
 						<i class="lnr lnr-phone-handset"></i>
-						<h6><a href="#">00 (440) 9865 562</a></h6>
+						<h6><a href="#">0789123456</a></h6>
 						<p>Thứ 2 đến thứ 6</p>
 					</div>
 					<div class="info_item">
@@ -286,34 +205,28 @@
 				<form class="row contact_form " method="post" id="contactForm" novalidate="novalidate">
 					<div class="col-md-6">
 						<div class="form-group">
-							<input type="text" class="form-control" id="name" name="name" placeholder="Nhập tên của bạn"
-								   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nhập tên của bạn'">
-							<p id="error_name"></p>
+							<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nhập tên của bạn">
+							<p class="form-message"></p>
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" id="email" name="email"
-								   placeholder="Nhập email của bạn" onfocus="this.placeholder = ''"
-								   onblur="this.placeholder = 'Hãy nhập email của bạn'">
-							<p id="error_email"></p>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Nhập email của bạn" >
+							<p class="form-message"></p>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="subject" name="subject"
-								   placeholder="Chủ đề bạn muốn nói đến" onfocus="this.placeholder = ''"
-								   onblur="this.placeholder = 'Chủ đề bạn muốn nói đến'">
-							<p id="error_subject"></p>
+							<input type="text" class="form-control" id="subject" name="subject" placeholder="Chủ đề bạn muốn nói đến" >
+							<p class="form-message"></p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-                            <textarea class="form-control" name="message" id="message" rows="1"
-									  placeholder="Lời nhắn của bạn" onfocus="this.placeholder = ''"
-									  onblur="this.placeholder = 'Lời nhắn của bạn'"></textarea>
-							<p id="error_message"></p>
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Lời nhắn của bạn" ></textarea>
+							<p class="form-message"></p>
 						</div>
 					</div>
 					<div class="col-md-12 text-right">
 						<div class="form-group">
-							<button type="submit" value="submit" class="primary-btn">Gửi đến chúng tôi</button>
+							<a href="contact.html" class="hover-text"></a>
+							<button type="submit" value="submit" class=" form-submit primary-btn">Gửi đến chúng tôi</button>
 						</div>
 					</div>
 				</form>
@@ -344,7 +257,7 @@
 			<div class="col-lg-3  col-md-6 col-sm-6">
 				<div class="single-footer-widget mail-chimp">
 					<div class="single-footer-widget">
-						<a href="../../../contact.html"><h6>Về chúng tôi</h6></a>
+						<a href="contact.html"><h6>Về chúng tôi</h6></a>
 						<p>Số điện thoại: 0789123456</p>
 						<p>Email: support@shoeshop.com</p>
 						<p>Địa chỉ: khu phố 6, phường Linh Trung, quận Thủ Đức, thành phố Hồ Chí Minh</p>
@@ -392,8 +305,6 @@
 </div>
 <!--================End Contact Success and Error message Area =================-->
 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="./jquery.validate.js"></script>
 <script src="js/vendor/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
@@ -409,6 +320,25 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 <script src="js/gmaps.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+	Validator({
+		form: '#contactForm',
+		formGroupSelector: '.form-group',
+		errorSelector: '.form-message',
+		rules: [
+			Validator.isRequired('#fullname', 'Vui lòng nhập tên của bạn.'),
+			Validator.isEmail('#email'),
+			Validator.minLength('#subject',10,'Chủ đề phải trên 10 kí tự.'),
+			Validator.isRequired('#message','Hãy để lại lời nhắn cho chúng tôi.'),
+		],
+		onSubmit: function (data) {
+			// Call API
+			console.log(data);
+		}
+	});
+</script>
+
 </body>
 
 </html>

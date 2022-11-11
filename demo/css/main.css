@@ -6223,8 +6223,10 @@ label {
     display: inline-block;
     color: #222222;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
+    height: 40px;
 }
+
 
 /* End Cart Area css
 ============================================================================================ */
@@ -7939,7 +7941,6 @@ label {
     margin-left: auto;
     margin-right: auto;
     width: 1140px;
-    background: rebeccapurple;
 }
 
 .contact_info .info_item {
