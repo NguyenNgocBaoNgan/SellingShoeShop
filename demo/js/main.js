@@ -255,14 +255,14 @@ $(document).ready(function(){
         noUiSlider.create(nonLinearSlider, {
             connect: true,
             behaviour: 'tap',
-            start: [ 0, 2500000 ],
+            start: [ 0, 4000000 ],
             range: {
                 // Starting at 100.000, step the value by 500,
                 // until 4000 is reached. From there, step by 1000.
                 'min': [ 0 ],
                 '10%': [ 5000, 10000 ],
                 '50%': [ 100000 , 200000 ],
-                'max': [ 2500000 ]
+                'max': [ 4000000 ]
             }
         });
 
