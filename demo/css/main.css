@@ -2229,7 +2229,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-product .product-details .prd-bottom .social-info:hover {
-    width: 115px;
+    width: 130px;
 }
 
 .single-product .product-details .prd-bottom .social-info:hover span:after {
@@ -8483,7 +8483,7 @@ li {
 }
 
 .form-message {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 1.6rem;
     padding: 4px 0 0;
 }
